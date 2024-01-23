@@ -1,0 +1,506 @@
+
+                <!DOCTYPE html>
+<html class="dark" lang="tr">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Fırat KAYA">
+<link rel="shortcut icon" type="image/x-icon" href="./masa/logo.png">
+
+
+<title>MajorCraft Network - Bakım</title>
+
+<meta name="description" content="Türkiye'nin 2024 Yılı İlk Minecraft Sunucularından Biriyiz. Kaliteli ve Akıcı Bir Oyun Deneyimi için Buradayız!" />
+<meta name="keywords" content="skyblock,rabels,1.16.5,minecraft,majorcraft,majorcraftsontop">
+<link rel="canonical" href="https://rabelsmc.net" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="MajorCraft Network - Bakım" />
+<meta property="og:description" content="Türkiye'nin yıllardır aktif olarak hizmet veren Minecraft sunucusu. Kaliteli ve akıcı bir oyun deneyimi için buradayız!" />
+<meta property="og:url" content="https://rabelsmc.net" />
+<meta property="og:site_name" content="Rabels" />
+
+<!-- AlpineJS Tooltip Plugin -->
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+<script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/alpine-tooltip@1.x.x/dist/cdn.min.js" defer></script>
+
+<script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
+
+
+<!-- FONTS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="https://rabelsmc.net/apps/main/themes/leaf/public/assets/css/style.min.css">
+
+
+<!-- COLORS -->
+<style>
+  :root {
+    --voonos-voon: 2 9 7;
+    --voonos-black: 0 0 0;
+    --voonos-white: 255 255 255;
+    --voonos-green-50: 254 242 242;
+    --voonos-green-100: 254 226 226;
+    --voonos-green-200: 254 202 202;
+    --voonos-green-300: 252 165 165;
+    --voonos-green-400: 248 113 113;
+    --voonos-green-500: 239 68 68;
+    --voonos-green-600: 220 38 38;
+    --voonos-green-700: 185 28 28;
+    --voonos-green-800: 153 27 27;
+    --voonos-green-900: 127 29 29;
+    --voonos-yellow-100: 254 249 195;
+    --voonos-yellow-500: 234 179 8;
+    --voonos-pink-100: 252 231 243;
+    --voonos-pink-500: 236 72 153;
+    --voonos-pink-600: 219 39 119;
+    --voonos-pink-800: 157 23 77;
+    --voonos-pink-900: 131 24 67;
+    --voonos-indigo-100: 224 231 255;
+    --voonos-indigo-400: 129 140 248;
+    --voonos-indigo-500: 99 102 241;
+    --voonos-indigo-600: 79 70 229;
+    --voonos-indigo-800: 55 48 163;
+    --voonos-blue-100: 219 234 254;
+    --voonos-blue-200: 191 219 254;
+    --voonos-blue-500: 59 130 246;
+    --voonos-blue-600: 37 99 235;
+    --voonos-red-100: 254 226 226;
+    --voonos-red-200: 254 202 202;
+    --voonos-red-500: 239 68 68;
+    --voonos-red-600: 220 38 38;
+    --voonos-gray-50: 249 250 251;
+    --voonos-gray-100: 243 244 246;
+    --voonos-gray-200: 229 231 235;
+    --voonos-gray-300: 209 213 219;
+    --voonos-gray-400: 156 163 175;
+    --voonos-gray-500: 107 114 128;
+    --voonos-gray-600: 75 85 99;
+    --voonos-gray-700: 55 65 81;
+    --voonos-gray-800: 31 41 55;
+    --voonos-gray-900: 17 24 39;
+    --voonos-purple-800: 107 33 168;
+    --voonos-purple-900: 88 28 135;
+  }
+</style>
+
+<!-- CUSTOM CSS -->
+<style type="text/css">
+  </style>
+
+<!-- ROLE CSS -->
+<style type="text/css">
+          
+            
+          .role__yoenetici {
+        <i class="fa-regular fa-chess-king"></i>      }
+            
+          .role__destek-birimi {
+        <i class="fa-regular fa-chess-king"></i>      }
+            
+            
+      </style></head>
+<body>
+<body class="dark" x-data="{ rulesModal: false, annModal: false, searchModal: false, mobileMenu: false }">
+<div id="app">
+  <header id="header">
+          <div class="py-3 px-4 -sm bg-voon-800 relative z-10" id="broadcast">
+        <div class="container mx-auto flex items-center gap-4">
+          <span class="bg-green-500/25 rounded-lg py-2 px-3 text-sm font-medium text-green-500">
+            <i class="fas fa-bullhorn"></i>
+          </span>
+                                                <a href="https://discord.gg/rabelsmc" class="text-sm dark:text-green-400/75 dark:hover:text-green-400/50 text-white/75 hover:text-white">Yeni discord sunucumuz açıldı. Katılmak için tıklayabilirsin, Towny sunucusu 20 ocak 20:00'da aktif.</a>
+                                </div>
+      </div>
+        <div class="h-96 relative z-30">
+              <div id="particles-js" class="absolute z-20 bottom-0 left-0 w-full h-full"></div>
+            <div class="absolute top-0 left-0 h-full w-full bg-cover bg-top" style="background-image: url('./masa/512.png')">
+        <div class="absolute top-0 left-0 w-full h-full bg-green-900/50"></div>
+      </div>
+      <div class="container flex justify-center md:justify-between items-center mx-auto gap-8 relative z-30 py-20">
+        <a href="/" class="shrink zoom-hover">
+          <img class="h-48" src="./masa/512p.png" alt="">
+        </a>
+        <div class="hidden md:flex h-full shrink">
+          <div data-toggle="copyip" data-clipboard-action="copy" data-clipboard-text="play.RabelsMC.net" class="cursor-pointer rounded-xl relative group overflow-hidden bg-green-500/25 transition hover:bg-green-500/50">
+            <div class="flex gap-6 py-6 px-8">
+              <div class="!bg-green-500 header-icon !w-24 !h-24">
+                <i class="fas fa-chess-queen text-green-100 !text-3xl"></i>
+              </div>
+              <div class="flex flex-col justify-center">
+                <div class="text-2xl font-bold text-green-300 max-w-xs">En iyisi olmaya hazır mısın?</div>
+                <span class="text-green-500 font-semibold ">play.majorcraft.xyz</span>
+              </div>
+            </div>
+            <div class="py-2 text-sm px-8 bg-green-700/25 group-hover:bg-green-700/50 text-green-400/75">
+              <span data-toggle="onlinetext" server-ip="play.majorcraft.xyz">-</span> oyuncu aktif            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="nav-soft bg-not relative card dark:bg-green-800 bg-white ">
+      <div class="flex justify-between gap-8 container mx-auto relative z-10" x-data="{ open: false }">
+        <div class="hidden gap-4 lg:flex w-full flex-shrink px-4">
+                                                                                              <a  class="nav-item " href="/">
+                <i class="fas fa-home"></i>
+                Ana Sayfa              </a>
+                                                                                                            <a  class="nav-item " href="/store">
+                <i class="fa fas fa-shopping-cart"></i>
+                Mağaza              </a>
+                                                                                                            <a  class="nav-item " href="/help">
+                <i class="fa fas fa-question-circle"></i>
+                Yardım              </a>
+                                                                                                            <a  class="nav-item " href="/punishments">
+                <i class="fa fas fa-ban"></i>
+                Banlar              </a>
+                                                                                                            <a  class="nav-item " href="/staffs">
+                <i class="fa fas fa-crown"></i>
+                Yetkililer              </a>
+                                                                                                            <a  class="nav-item " href="/vote">
+                <i class="fa fas fa-poll"></i>
+                Oy              </a>
+                                                                                                                                      <a  class="nav-item " href="/support">
+                <i class="fa fas fa-life-ring"></i>
+                Destek              </a>
+                                          
+        </div>
+        <div @click="mobileMenu = !false" class="cursor-pointer text-gray-800 font-medium block lg:hidden flex gap-2 w-fit px-4 items-center bg-white dark:bg-green-800 dark:text-white rounded-xl">
+          <i class="fas fa-bars relative z-10"></i>
+          <span class="relative z-10">Menu</span>
+        </div>
+                  <a href="/login" class="relative flex-shrink-0 pr-16 z-10">
+            <div class="my-2 flex flex-col justify-center text-right py-2 pr-4">
+              <span class="text-gray-800 font-semibold dark:text-green-300">Misafir</span>
+              <span class="text-sm text-gray-400 font-medium dark:text-green-300/75">Tıkla Giriş Yap!</span>
+            </div>
+            <div class="absolute w-16 h-22 bg-cover bg-top bottom-0 right-0 transform scale-x-reverse" style="background-image: url('https://minotar.net/body/mhf_steve/100.png')"></div>
+          </a>
+              </div>
+    </nav>
+    <div x-cloak x-show="searchModal" class="fixed z-50 w-full h-full top-0 left-0">
+      <div @click="searchModal = false" class="absolute w-full h-full top-0 left-0 bg-black/50"></div>
+      <div class="relative z-50 flex mt-16 mx-16">
+        <div class="w-full bg-white rounded-xl  py-5 px-4">
+          <div class="flex gap-3" x-data="{ player:null }">
+            <input @keyup.enter="location.href = '/player/'+player" type="search" x-model="player" placeholder="Oyuncu ara..." class="font-medium border-0 w-full text-gray-500 placeholder-gray-400 py-3 px-4 text-sm rounded-xl bg-green-50 focus:ring-2 focus:ring-green-300 hover:bg-green-100 focus:bg-green-100">
+            <div @click="location.href = '/player/'+player" class="cursor-pointer bg-green-500 text-white text-sm font-medium py-3 px-5 rounded-xl">Ara</div>
+            <div @click="searchModal = false" class="cursor-pointer rounded-xl text-red-500 py-3 px-2 text-sm font-medium"><i class="fa fa-times"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div x-cloak class="absolute top-0 md:!hidden left-0 bg-black/25 h-full w-full" style="z-index: 100" x-show="mobileMenu">
+    <div id="sidebar" class="w-1/2 h-full bg-gray-100 min-w-md" @click="mobileMenu = true" @click.away="mobileMenu = false">
+      <div class="text-gray-700 font-bold px-6 py-4 bg-gray-200/50 border-b-2 border-gray-200">Menu</div>
+      <div class="divide-gray-200/50 divide-y">
+                                                                              <a href="/" class="transition font-semibold hover:text-gray-700 block relative py-3 px-4 text-gray-500 ">
+              
+              Ana Sayfa            </a>
+                                                                                          <a href="/store" class="transition font-semibold hover:text-gray-700 block relative py-3 px-4 text-gray-500 ">
+              
+              Mağaza            </a>
+                                                                                          <a href="/help" class="transition font-semibold hover:text-gray-700 block relative py-3 px-4 text-gray-500 ">
+              
+              Yardım            </a>
+                                                                                          <a href="/punishments" class="transition font-semibold hover:text-gray-700 block relative py-3 px-4 text-gray-500 ">
+              
+              Banlar            </a>
+                                                                                          <a href="/staffs" class="transition font-semibold hover:text-gray-700 block relative py-3 px-4 text-gray-500 ">
+              
+              Yetkililer            </a>
+                                                                                          <a href="/vote" class="transition font-semibold hover:text-gray-700 block relative py-3 px-4 text-gray-500 ">
+              
+              Oy            </a>
+                                                                                                                <a href="/support" class="transition font-semibold hover:text-gray-700 block relative py-3 px-4 text-gray-500 ">
+              
+              Destek            </a>
+                                  </div>
+    </div>
+  </div>
+  
+  <main class="relative">
+          <div class="absolute top-0 left-0 w-full h-full opacity-25" style="background-image: url('https://rabelsmc.net/apps/main/themes/leaf/public/assets/img/background.png')"></div>
+        <div class="relative z-30"><main class="main" role="main">
+  <style>
+  #header, #footer, header {
+    display: none !important;
+  }
+</style>
+<section class="min-h-screen" style="z-index: 999">
+  <div class="min-h-screen flex justify-center items-center" style="background-image: url('https://t3.ftcdn.net/jpg/04/18/87/10/360_F_418871054_UqwRTkAIGZYMeycs0LrBp6PUa06mtYKD.jpg')">
+    <div>
+      <img class="w-40 mx-auto mb-8" src="./masa/512p.png" alt="logo">
+      <div style="padding-top: 5rem;padding-bottom: 5rem;" class="px-8 rounded-xl bg-white  text-center">
+        <h1 class="text-gray-800 font-bold text-2xl">YAKINDA</h1>
+        <p style="max-width: 30rem;" class="mt-3 text-lg text-gray-600 font-medium">Web Sitemiz ve Sunucumuz Şu Anda Yapım Aşamasında, Aktif MajorCraft Ekibi ile Yakında Sizlerle Olucağız!</p>
+              </div>
+    </div>
+  </div>
+</section>
+</main>
+</div>
+</main>
+<footer id="footer">
+  
+<div class="grid md:grid-cols-7">
+  <div class="relative md:col-span-3 py-10 bg-gradient-to-r from-green-700 to-green-600 px-10">
+    <div class="lg:ml-auto w-fit lg:mr-[20rem]">
+      <div class="text-xl font-bold text-white">Son Kayıtlar</div>
+      <p class="text-white/75 mt-2">Sunucumuza 3179 oyuncu kayıt oldu!</p>
+      <div class="hidden lg:block absolute bg-cover bottom-0 right-0 w-[20rem] h-[11rem]" style="background-image: url('https://cdn.discordapp.com/attachments/663007210426728458/943870606447874058/cha.png')"></div>
+    </div>
+  </div>
+  <div class="md:col-span-4 flex gap-4 relative px-10 overflow-hidden items-center bg-green-900 py-12">
+    <div class="absolute top-0 left-0 w-full h-full bg-black/75"></div>
+          <div class="relative overflow-hidden flex flex-col items-center justify-center min-w-[8rem]">
+        <span class="h-1/2 absolute bg-white/[10%] w-px top-1/4 left-0"></span>
+        <img class="rounded-xl h-fit" src="https://minotar.net/avatar/ExperienceAsh/60.png" alt="">
+        <div class="text-sm font-medium text-white mt-2">ExperienceAsh</div>
+        <time class="text-white/[65%] text-xs uppercase mt-0.5">1 ay önce</time>
+      </div>
+          <div class="relative overflow-hidden flex flex-col items-center justify-center min-w-[8rem]">
+        <span class="h-1/2 absolute bg-white/[10%] w-px top-1/4 left-0"></span>
+        <img class="rounded-xl h-fit" src="https://minotar.net/avatar/Aniolad/60.png" alt="">
+        <div class="text-sm font-medium text-white mt-2">Aniolad</div>
+        <time class="text-white/[65%] text-xs uppercase mt-0.5">4 ay önce</time>
+      </div>
+          <div class="relative overflow-hidden flex flex-col items-center justify-center min-w-[8rem]">
+        <span class="h-1/2 absolute bg-white/[10%] w-px top-1/4 left-0"></span>
+        <img class="rounded-xl h-fit" src="https://minotar.net/avatar/Turkishates/60.png" alt="">
+        <div class="text-sm font-medium text-white mt-2">Turkishates</div>
+        <time class="text-white/[65%] text-xs uppercase mt-0.5">4 ay önce</time>
+      </div>
+          <div class="relative overflow-hidden flex flex-col items-center justify-center min-w-[8rem]">
+        <span class="h-1/2 absolute bg-white/[10%] w-px top-1/4 left-0"></span>
+        <img class="rounded-xl h-fit" src="https://minotar.net/avatar/qtrq/60.png" alt="">
+        <div class="text-sm font-medium text-white mt-2">qtrq</div>
+        <time class="text-white/[65%] text-xs uppercase mt-0.5">4 ay önce</time>
+      </div>
+          <div class="relative overflow-hidden flex flex-col items-center justify-center min-w-[8rem]">
+        <span class="h-1/2 absolute bg-white/[10%] w-px top-1/4 left-0"></span>
+        <img class="rounded-xl h-fit" src="https://minotar.net/avatar/Wortex/60.png" alt="">
+        <div class="text-sm font-medium text-white mt-2">Wortex</div>
+        <time class="text-white/[65%] text-xs uppercase mt-0.5">4 ay önce</time>
+      </div>
+      </div>
+</div><div class="bg-cover bg-center py-14 relative" style="background-image: url('/apps/main/public/assets/img/uploads/e824a1ad5c07ca66860c386dce936d95.png')">
+  <div class="bg-black/25 absolute top-0 left-0 h-full w-full">
+    <div class="absolute top-0 left-0 h-full w-full bg-green-900/25"></div>
+    <div class="absolute z-10 top-0 left-0 h-full w-full bg-gradient-to-r from-black/50 via-transparent to-black/50"></div>
+  </div>
+  <div class="relative z-10 container mx-auto px-4 flex flex-col md:flex-row items-center md:justify-between gap-6">
+    <div class="text-white text-center md:text-left">
+      <h4 class="text-2xl font-medium">Rabels ile kendini yeşil dünyaya bırak</h4>
+      <span class="text-white/75">
+        Gücü eline alacağın eşyalar için mağazaya göz at!      </span>
+    </div>
+    <div class="flex items-center justify-center mt-16 md:mt-0">
+      <div class="text-11xl absolute -ml-6 lg:absolute right-0">
+        <i class="fas fa-leaf text-green-600 mr-2"></i>
+      </div>
+              <a class="relative bg-white font-semibold rounded-xl py-4 px-6 text-gray-700 transition duration-300 hover:-xl hover:text-gray-800" href="/register">
+          <i class="fas fa-leaf text-green-500 mr-2"></i>
+          Aramıza Katıl        </a>
+          </div>
+  </div>
+</div><div class="bg-voon-800 py-8 relative z-20">
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between">
+      <div class="text-sm text-center md:text-left flex flex-col">
+        <h3 class="text-white font-semibold uppercase">Hakkımızda</h3>
+        <p class="text-white/75 max-w-lg mt-2">
+                      Rabels Oyun Hizmetleri, 2023 yılının en popüler Minecraft sunucusu. 2024 Yılında tekrar aktifleşiyor!                  </p>
+        
+        <div class="text-white/75 mt-auto text-xs mt-2">
+          <span class="font-medium text-white">Rabels</span>. Tüm hakları saklıdır. &copy; 2024        </div>
+      </div>
+      <div class="hidden md:flex h-full">
+        <img class="h-32 my-auto" src="https://rabelsmc.net/apps/main/public/assets/img/uploads/ffba927a38e136adac749eaab3b56f9e.png" alt="">
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center justify-center md:justify-between border-t border-gray-800/50 mt-4 pt-3">
+      <div class="lg:flex gap-2">
+        <div class="flex gap-2">
+                                                </div>
+        <div class="flex justify-center gap-2 mt-2 mb-4 lg:mt-0 lg:mb-0">
+                                                            <a href="https://www.youtube.com/@rabelsgameservices/" class="bg-red-500/25 p-3 w-10 flex items-center justify-center rounded-xl transition hover:bg-red-500 hover:bg-opacity-40">
+                <i class="fab fa-youtube text-red-600"></i>
+              </a>
+                                      <a href="https://www.instagram.com/rabelsmc/" class="bg-pink-500/25 p-3 w-10 flex items-center justify-center rounded-xl transition hover:bg-pink-500 hover:bg-opacity-40">
+                <i class="fab fa-instagram text-pink-600"></i>
+              </a>
+                                                  <a href="https://discord.gg/rabelsmc" class="bg-indigo-400/25 p-3 w-10 flex items-center justify-center rounded-xl transition hover:bg-indigo-400 hover:bg-opacity-40">
+                <i class="fab fa-discord text-indigo-500"></i>
+              </a>
+                              </div>
+      </div>
+      <div class="text-white/75 text-sm mt-2 md:mt-0">
+        <a href="https://leaderos.net" target="_blank" class="font-bold text-white">LeaderOS</a>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+</div>
+<script>
+  var lang = {
+    credits: "%credit% kredi",
+    search: "Ara...",
+    loading: "Yükleniyor...",
+    confirm_delete: "Silmek istediğinizden emin misiniz?",
+    player_not_found: "Oyuncu bulunamadı!",
+    play_again: "Tekrar oyna",
+    spinning: "Çeviriliyor...",
+    apply: "Uygula",
+    remove: "Sil",
+    alert_btn_ok: "OK",
+    alert_btn_cancel: "İptal",
+    alert_btn_confirm: "Onayla",
+    alert_btn_buy_credit: "Kredi Yükle",
+    alert_title_success: "Başarılı!",
+    alert_title_error: "Hata!",
+    alert_title_warning: "Uyarı!",
+    alert_title_you_lost: "Kaybettin!",
+    alert_title_you_win: "Kazandınız!",
+    alert_message_server_address_copied: "Sunucu adresi kopyalandı!",
+    alert_message_something_went_wrong: "Bir şeyler yanlış. Sonra tekrar deneyin.",
+    alert_message_lottery_error_duration: "Tekrar çevirmek için %date%'e kadar beklemeniz gerekiyor.",
+    alert_message_lottery_you_lost: "Üzgünüm, kaybettiniz. Sonra tekrar deneyin.",
+    alert_message_lottery_you_win: "Tebrikler! <strong>%prize%</strong> kazandınız!",
+    alert_message_lottery_you_win_chest: "Ürün sandığınıza eklendi.",
+    alert_message_lottery_you_win_credit: "Mevcut Kredi: %credit%",
+    alert_message_lottery_credit_error: "Oynamak için yeterli krediniz bulunmuyor.",
+    alert_message_chest_confirm: "Onaylamadan önce oyunda olduğunuzdan emin olun, aksi takdirde ürün size ulaşmayabilir!",
+    alert_message_chest_sending: "Teslimat işlemi devam ediyor, lütfen bekleyin ve sayfadan ayrılmayın...",
+    alert_message_chest_sent: "Ürün başarıyla teslim edildi, Hayırlı Olsun!",
+    alert_message_chest_server_error: "Sunucuya bağlanırken bir sorun yaşandı, lütfen daha sonra tekrar deneyin.",
+    alert_message_chest_amount_error: "En fazla %amount% adet teslim alabilirsin!",
+    alert_message_login: "Bu işlemi yapabilmek için giriş yapın.",
+    help_voting_success: "Oy kullanımı başarıyla tamamlandı!",
+    alert_message_checkout_credit_error: "Yeterli krediniz bulunmuyor.",
+    alert_message_checkout_success: "Ödeme işlemi tamamlandı ve ürün sandığınıza eklendi.",
+    alert_message_checkout_quantity_error: "Geçerli bir adet giriniz!",
+    alert_message_checkout_stock_error: "Stok nedeniyle bu üründen daha fazla ekleyemezsin!",
+    alert_message_checkout_stock_error2: "Stokta yeterli ürün yok!",
+    alert_message_checkout_cart_empty_error: "Sepetiniz boş!",
+    alert_message_checkout_coupon_invalid: "Kupon geçersiz!",
+    alert_message_checkout_coupon_invalid_for_cart: "Bu kupon, sepetiniz için uygun değil!",
+    alert_message_checkout_coupon_used: "Bu kuponu daha önceden kullandınız!",
+    alert_message_checkout_coupon_expired: "Bu kuponun süresi bitmiş!",
+    alert_message_checkout_coupon_login: "Kupon kullanmak için giriş yapmanız gerekiyor!",
+    alert_message_checkout_coupon_success: "Kupon başarıyla uygulandı!",
+    alert_message_checkout_coupon_price: "Bu kuponu kullanabilmek için sepetiniz en az %amount% kredi değerinde olmalıdır!",
+    alert_message_not_found: "Not found!",
+    limited_stock: "Sınırlı Stok!",
+    in_stock: "%stock% stokta",
+    discount_off: "%discount%% İndirim!"
+  }
+</script><script>
+  var themePath = 'https://rabelsmc.net/apps/main/themes/leaf';
+  var $onlineAPI = 1;
+  var $discordID = '1089848489728548864';
+  var langCode = 'tr';
+  var currency = 'TRY';
+  var currencySymbol = '₺';
+  var currencyRate = 1.0000000000;
+</script>
+
+  <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"tr","page_load_consent_levels":["strictly-necessary", "functionality", "tracking", "targeting"],"notice_banner_reject_button_hide":true,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Rabels","website_privacy_policy_url":"https://rabelsmc.net/privacy"});
+    });
+  </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://rabelsmc.net/apps/main/themes/leaf/public/assets/js/theme.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/16.1.0/lazyload.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {"value": 400, "density": {"enable": true, "value_area": 3000}},
+      "color": {"value": "#46d227"},
+      "shape": {
+        "type": "circle",
+        "stroke": {"width": 0, "color": "#000000"},
+        "polygon": {"nb_sides": 3},
+        "image": {"src": "img/github.svg", "width": 100, "height": 100}
+      },
+      "opacity": {
+        "value": 0.75,
+        "random": true,
+        "anim": {"enable": false, "speed": 1, "opacity_min": 0.1, "sync": false}
+      },
+      "size": {"value": 2, "random": true, "anim": {"enable": true, "speed": 5, "size_min": 0, "sync": false}},
+      "line_linked": {"enable": false, "distance": 500, "color": "#ffffff", "opacity": 0.4, "width": 2},
+      "move": {
+        "enable": true,
+        "speed": 7.8914764163227265,
+        "direction": "top",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {"enable": false, "rotateX": 600, "rotateY": 1200}
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {"enable": false, "mode": "bubble"},
+        "onclick": {"enable": false, "mode": "repulse"},
+        "resize": true
+      },
+      "modes": {
+        "grab": {"distance": 400, "line_linked": {"opacity": 0.5}},
+        "bubble": {"distance": 400, "size": 4, "duration": 0.3, "opacity": 1, "speed": 3},
+        "repulse": {"distance": 200, "duration": 0.4},
+        "push": {"particles_nb": 4},
+        "remove": {"particles_nb": 2}
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+<script type="text/javascript">
+  var $onlineAPI = 1;
+  var $preloaderStatus = 'true';
+  
+  var lazyLoader = new LazyLoad({
+    elements_selector: ".lazyload"
+  });
+  
+  var CopyServerIP = (function() {
+    var $copyip = $('[data-toggle="copyip"]');
+    // Init
+    function init($copyip) {
+      var clipboard = new ClipboardJS('[data-toggle="copyip"]');
+      clipboard.on("success", function(e) {
+        swal.fire({
+          title: lang.alert_title_success,
+          text: lang.alert_message_server_address_copied,
+          type: "success",
+          confirmButtonColor: "#02b875",
+          confirmButtonText: lang.alert_btn_ok
+        });
+      });
+    }
+    if ($copyip.length) {
+      $copyip.each(function() {
+        init($(this));
+      });
+    }
+  })();
+</script>
+
+
+</body>
+</html>
+      
